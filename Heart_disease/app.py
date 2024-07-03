@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 
-dataset = pd.read_csv("Heart_disease/dataset.csv")
+dataset = pd.read_csv("Heart_Disease_Prediction\Heart_disease\dataset.csv")
 y = dataset["target"]
 X = dataset.drop(["target"], axis=1)
 

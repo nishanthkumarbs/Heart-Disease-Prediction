@@ -10,142 +10,164 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .text-danger {
+            color: #dc3545 !important;
+        }
+        .text-success {
+            color: #28a745 !important;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1 class="display-4 text-center">Heart Disease Predictor</h1>
+        <h1 class="display-4 text-center my-4">Heart Disease Predictor</h1>
     </header>
     <main>
         <div class="container">
             <form action="" method="post">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">Age</label>
-                            <input type="text" class="form-control" name="age" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" class="form-control" name="age" id="age" placeholder="Enter age" required>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">Gender</label>
-                            <input type="text" class="form-control" name="gender" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="gender" class="form-label">Gender</label>
+                            <input type="number" class="form-control" name="gender" id="gender" placeholder="Enter gender" required>
+                            </select>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">CP</label>
-                            <input type="text" class="form-control" name="cp" id="" aria-describedby="helpId"
-                                placeholder="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label for="" class="form-label">TRestBPS</label>
-                            <input type="text" class="form-control" name="TRestBPS" id="" aria-describedby="helpId"
-                                placeholder="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label for="" class="form-label">Cholesterol</label>
-                            <input type="text" class="form-control" name="chol" id="" aria-describedby="helpId"
-                                placeholder="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label for="" class="form-label">FBS</label>
-                            <input type="text" class="form-control" name="fbs" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="cp" class="form-label">Chest Pain Type (CP)</label>
+                            <input type="number" class="form-control" name="cp" id="cp" placeholder="Enter CP" required>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">RestECG</label>
-                            <input type="text" class="form-control" name="RestECG" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="TRestBPS" class="form-label">Resting Blood Pressure (TRestBPS)</label>
+                            <input type="number" class="form-control" name="TRestBPS" id="TRestBPS" placeholder="Enter TRestBPS" required>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">thalach</label>
-                            <input type="text" class="form-control" name="thalach" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="chol" class="form-label">Cholesterol</label>
+                            <input type="number" class="form-control" name="chol" id="chol" placeholder="Enter cholesterol level" required>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">exang</label>
-                            <input type="text" class="form-control" name="exang" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="fbs" class="form-label">Fasting Blood Sugar (FBS)</label>
+                            <input type="number" class="form-control" name="fbs" id="fbs" placeholder="Enter FBS" required>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">oldpeak</label>
-                            <input type="text" class="form-control" name="oldpeak" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="RestECG" class="form-label">Resting Electrocardiographic Results (RestECG)</label>
+                            <input type="number" class="form-control" name="RestECG" id="RestECG" placeholder="Enter RestECG" required>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">slope</label>
-                            <input type="text" class="form-control" name="slope" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="thalach" class="form-label">Maximum Heart Rate Achieved (thalach)</label>
+                            <input type="number" class="form-control" name="thalach" id="thalach" placeholder="Enter thalach" required>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">ca</label>
-                            <input type="text" class="form-control" name="ca" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="exang" class="form-label">Exercise Induced Angina (exang)</label>
+                            <input type="number" class="form-control" name="exang" id="exang" placeholder="Enter exang" required>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">Thal</label>
-                            <input type="text" class="form-control" name="thal" id="" aria-describedby="helpId"
-                                placeholder="">
+                            <label for="oldpeak" class="form-label">ST Depression Induced by Exercise (oldpeak)</label>
+                            <input type="number" class="form-control" name="oldpeak" id="oldpeak" placeholder="Enter oldpeak" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="slope" class="form-label">Slope of the Peak Exercise ST Segment (slope)</label>
+                            <input type="number" class="form-control" name="slope" id="slope" placeholder="Enter slope" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="ca" class="form-label">Number of Major Vessels (ca)</label>
+                            <input type="number" class="form-control" name="ca" id="ca" placeholder="Enter ca" required>
                         </div>
                     </div>
                 </div>
-                
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="thal" class="form-label">Thalassemia (thal)</label>
+                            <input type="number" class="form-control" name="thal" id="thal" placeholder="Enter thal" required>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
-
         </div>
     </main>
-    <footer class="text-center">
+    <footer class="text-center my-4">
         {% if res == 1 %}
-        <h1>For the given parameter he might get Heart Disease</h1>
-        {% elif res==0 %}
-        <h1>For the given parameter he might not get Heart Disease</h1>
+        <h2 class="text-danger">For the given parameters, the individual might have Heart Disease.</h2>
+        {% elif res == 0 %}
+        <h2 class="text-success">For the given parameters, the individual might not have Heart Disease.</h2>
         {% endif %}
-        <!-- place footer here -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
-
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
