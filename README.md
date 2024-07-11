@@ -8,12 +8,12 @@ It Prediction the Quality of the wine using the Dataset
 - Required Python libraries:
   - `numpy`
   - `pandas`
-  - `matplotlib`
-  - `seaborn`
+  - `Flask`
   - `scikit-learn`
   
   You can install these libraries using pip:
   ```
-  pip install numpy pandas matplotlib seaborn scikit-learn
+  pip install pandas numpy scikit-learn Flask
 
   ```
+
